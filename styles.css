@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f9fc;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    padding: 45px 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.header-links a {
+    color: #4dabff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 12%;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* EXPERIENCE */
+.experience-card {
+    background: #f1f4f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* PROJECT CARDS */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: white;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-card button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin: 10px 0 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.project-card button:hover {
+    background: #005fcc;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-box {
+    background: #e9f3ff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.fade-in-header {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+}
+
+.modal-content img {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+#modal-content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#modal-content h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+#modal-content p {
+    font-size: 16px;
+    margin: 10px auto 20px;
+    width: 80%;
+    line-height: 1.5;
+}
+
+.modal-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    background: #007bff;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.modal-link:hover {
+    background: #005fcc;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.mySlide {
+    display: none;
+}
+
+.mySlide img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Smooth fade animation */
+.fade-slide {
+    animation: fadeEffect 1s ease;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
+
+/* SLIDESHOW ARROWS */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    color: #4dabff;
+}
+
+/* DOT INDICATORS */
+.dots-container {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.active-dot, .dot:hover {
+    background-color: #007bff;
+}
+
+/* SLIDESHOW FADE EFFECT */
+.fade-slide {
+    animation: fadeEffect 0.7s ease;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
