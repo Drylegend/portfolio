@@ -7,28 +7,58 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+        <span class="nav-logo">UC</span>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a class="resume-btn" href="assets/resume/Utsav_Chatterjee_Resume.pdf" target="_blank">Resume</a>
+        </div>
+    </div>
+</nav>
 <!-- HEADER -->
 <header class="fade-in-header">
-    <h1>Utsav Chatterjee</h1>
-    <p>Software Engineering Intern | AI & Data Science</p>
+<h1>Utsav Chatterjee</h1>
+<p class="tech-stack">
+Python • Machine Learning • NLP • Big Data • MLOps
+</p>
+
     <div class="header-links">
         <a href="https://www.linkedin.com/in/utsav-chatterjee741" target="_blank">LinkedIn</a>
         <a href="https://github.com/Drylegend" target="_blank">GitHub</a>
         <a href="mailto:utsavchatterrjee741@gmail.com">Email</a>
+    </div>
+
+    <div class="hero-buttons">
+        <a class="hero-btn" href="#projects">View Projects</a>
+        <a class="hero-btn" href="assets/resume/Utsav_Chatterjee_Resume.pdf" download>Download Resume</a>
+        <button class="hero-btn" onclick="openResume()">View Resume</button>
     </div>
 </header>
 
 <!-- ABOUT SECTION -->
 <section id="about" class="section fade-in">
     <h2>About Me</h2>
-    <p>
-        I’m a data science and software engineering enthusiast with over five years of experience 
-        in production testing, process optimisation, and automation. I’m currently pursuing a 
-        BTech in AI & DS at REVA University, where I work on real-world projects in machine learning, 
-        deep learning, big data, MLOps, and full-stack model deployment. I enjoy building scalable 
-        solutions, designing user-centric applications, and solving practical engineering problems.
-    </p>
+        <p>
+        I am an Artificial Intelligence and Data Science student at REVA University with experience building
+        machine learning systems, automation pipelines, and data-driven applications using Python. My work
+        focuses on developing practical AI solutions that analyse complex data, automate workflows, and
+        support intelligent decision-making.
+
+        Before transitioning into AI and software development, I spent over five years in engineering
+        production environments at Centum Electronics, where I improved testing workflows and optimised
+        process efficiency. This experience shaped my approach to problem-solving—combining engineering
+        thinking with data-driven analysis.
+
+        I am particularly interested in AI systems, machine learning applications, and scalable data
+        solutions that help organisations solve real-world problems and build intelligent products.
+        </p>
+        <p><b>Key Interests:</b> AI Systems • Machine Learning • NLP • Data Engineering • Intelligent Automation</p>
 </section>
 
 <!-- EXPERIENCE SECTION -->
@@ -122,7 +152,20 @@
     <span class="close" onclick="closeModal()">&times;</span>
     <div id="modal-content" class="modal-content"></div>
 </div>
+<!-- RESUME MODAL -->
+<div id="resumeModal" class="modal">
+    <span class="close" onclick="closeResume()">&times;</span>
 
+    <div class="resume-viewer">
+        <iframe src="assets/resume/Utsav_Chatterjee_Resume.pdf"></iframe>
+
+        <a class="modal-link" 
+           href="assets/resume/Utsav_Chatterjee_Resume.pdf" 
+           download>
+           Download Resume
+        </a>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
