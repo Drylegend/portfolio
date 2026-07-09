@@ -115,6 +115,46 @@
       ],
       "category": "ML",
       "year": 2024
+    },
+    "cih": {
+      "title": "Cih",
+      "short_desc": "Content Intelligence Hub transforms web pages and documents into concise summaries and audio streams, using Gemini for AI summarization and edge-tts for streaming TTS.",
+      "full_desc": "This full‑stack web application ingest URLs or PDFs/DOCs/TXT files, extracts readable text with Cheerio and PDF.js/Mammoth.js, stores content in MongoDB Atlas, summarizes it via Gemini, splits the text into 150‑word chunks, streams TTS audio over WebSocket, and saves final audio to Cloudinary. It features JWT authentication, a light/dark themed UI, a React‑based dashboard, and session persistence via sessionStorage.",
+      "github": "",
+      "cover": "assets/cih1.png",
+      "images": [
+        "assets/cih1.png",
+        "assets/cih2.png",
+        "assets/cih3.png",
+        "assets/cih4.png",
+        "assets/cih5.png",
+        "assets/cih6.png",
+        "assets/cih7.png",
+        "assets/cih8.png",
+        "assets/cih9.png"
+      ],
+      "tech_tags": [
+        "Cheerio",
+        "PDF.js",
+        "Mammoth.js",
+        "Lucide icons",
+        "React",
+        "React CDN",
+        "Express",
+        "Node.js",
+        "MongoDB Atlas",
+        "Mongoose",
+        "JWT",
+        "@google/generative‑ai",
+        "edge‑tts-universal",
+        "wsdadh WebSocket",
+        "Cloudinary",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "category": "ML",
+      "year": 2026
     }
   }
 }
