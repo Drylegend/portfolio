@@ -1,0 +1,28 @@
+# ── HTML Parsing ────────────────────────────────────────────────────────────
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# ── Image Processing ────────────────────────────────────────────────────────
+Pillow>=10.0
+
+# ── Browser Smoke Testing ───────────────────────────────────────────────────
+playwright>=1.40
+
+# ── LLM Providers ───────────────────────────────────────────────────────────
+google-generativeai>=0.7        # PROVIDER=gemini
+openai>=1.30                    # PROVIDER=openrouter (OpenAI-compatible API)
+
+# ── Environment & Config ────────────────────────────────────────────────────
+python-dotenv>=1.0
+
+# ── Terminal UI ─────────────────────────────────────────────────────────────
+rich>=13.0
+
+# ── Database ────────────────────────────────────────────────────────────────
+# sqlite3 is Python stdlib — no package needed
+
+# ── HTTP (for GitHub URL validation) ────────────────────────────────────────
+requests>=2.31
+
+# ── Post-install step required ──────────────────────────────────────────────
+# playwright install chromium

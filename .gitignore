@@ -1,0 +1,24 @@
+# ── Environment & Keys ────────────────────────────────────────────────────────
+.env
+agent/.env
+
+# ── Agent Databases & Artifacts ──────────────────────────────────────────────
+agent/memory/*.db
+agent/memory/logs/
+agent/memory/backups/
+
+# ── User Planning / Documentation to exclude from Git ────────────────────────
+implementation_plan of protfolio agent
+implementation_plan.md
+walkthrough.md
+
+# ── Python Cache & Virtual Environments ────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+ENV/
+env/
