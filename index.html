@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Utsav Chatterjee | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Utsav Chatterjee | Portfolio</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
 <!-- NAVBAR -->
 <nav class="navbar">
-    <div class="nav-container">
-        <span class="nav-logo">UC</span>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-            <a class="resume-btn" href="assets/resume/Utsav Chatterjee.pdf" target="_blank">Resume</a>
-        </div>
-    </div>
+<div class="nav-container">
+<span class="nav-logo">UC</span>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+<a class="resume-btn" href="assets/resume/Utsav Chatterjee.pdf" target="_blank">Resume</a>
+</div>
+</div>
 </nav>
 <!-- HEADER -->
 <header class="fade-in-header">
@@ -27,24 +27,21 @@
 <p class="tech-stack">
 Python • Machine Learning • NLP • Big Data • MLOps
 </p>
-
-    <div class="header-links">
-        <a href="https://www.linkedin.com/in/utsav-chatterjee741" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Drylegend" target="_blank">GitHub</a>
-        <a href="mailto:utsavchatterrjee741@gmail.com">Email</a>
-    </div>
-
-    <div class="hero-buttons">
-        <a class="hero-btn" href="#projects">View Projects</a>
-        <a class="hero-btn" href="assets/resume/Utsav Chatterjee.pdf" download>Download Resume</a>
-        <button class="hero-btn" onclick="openResume()">View Resume</button>
-    </div>
+<div class="header-links">
+<a href="https://www.linkedin.com/in/utsav-chatterjee741" target="_blank">LinkedIn</a>
+<a href="https://github.com/Drylegend" target="_blank">GitHub</a>
+<a href="mailto:utsavchatterrjee741@gmail.com">Email</a>
+</div>
+<div class="hero-buttons">
+<a class="hero-btn" href="#projects">View Projects</a>
+<a class="hero-btn" download="" href="assets/resume/Utsav Chatterjee.pdf">Download Resume</a>
+<button class="hero-btn" onclick="openResume()">View Resume</button>
+</div>
 </header>
-
 <!-- ABOUT SECTION -->
-<section id="about" class="section fade-in">
-    <h2>About Me</h2>
-        <p>
+<section class="section fade-in" id="about">
+<h2>About Me</h2>
+<p>
         I am an Artificial Intelligence and Data Science student at REVA University with experience building
         machine learning systems, automation pipelines, and data-driven applications using Python. My work
         focuses on developing practical AI solutions that analyse complex data, automate workflows, and
@@ -58,115 +55,105 @@ Python • Machine Learning • NLP • Big Data • MLOps
         I am particularly interested in AI systems, machine learning applications, and scalable data
         solutions that help organisations solve real-world problems and build intelligent products.
         </p>
-        <p><b>Key Interests:</b> AI Systems • Machine Learning • NLP • Data Engineering • Intelligent Automation</p>
+<p><b>Key Interests:</b> AI Systems • Machine Learning • NLP • Data Engineering • Intelligent Automation</p>
 </section>
-
 <!-- EXPERIENCE SECTION -->
-<section id="experience" class="section fade-in">
-    <h2>Experience</h2>
-
-    <div class="experience-card">
-        <h3>Production & Testing Coordinator — Centum Electronics</h3>
-        <p class="sub">Bangalore, India | 2017–2022</p>
-        <ul>
-            <li>Reduced testing time from <b>24 hrs → 8 hrs</b>, scaling output from 300 → 2000 boards/month and boosting revenue by ~$170K/month.</li>
-            <li>Optimised test workflows and implemented structured defect documentation.</li>
-            <li>Coordinated technicians and daily production targets to ensure on-time delivery.</li>
-        </ul>
-    </div>
+<section class="section fade-in" id="experience">
+<h2>Experience</h2>
+<div class="experience-card">
+<h3>Production &amp; Testing Coordinator — Centum Electronics</h3>
+<p class="sub">Bangalore, India | 2017–2022</p>
+<ul>
+<li>Reduced testing time from <b>24 hrs → 8 hrs</b>, scaling output from 300 → 2000 boards/month and boosting revenue by ~$170K/month.</li>
+<li>Optimised test workflows and implemented structured defect documentation.</li>
+<li>Coordinated technicians and daily production targets to ensure on-time delivery.</li>
+</ul>
+</div>
 </section>
-
 <!-- PROJECTS SECTION -->
-<section id="projects" class="section fade-in">
-    <h2>Projects</h2>
+<section class="section fade-in" id="projects">
+<h2>Projects</h2>
+<div class="project-container">
+<!-- WEATHER ML PIPELINE -->
+<div class="project-card">
+<img alt="Weather Pipeline" src="assets/weather_cover.jpg"/>
+<h3>Automated Weather ML Pipeline (MLOps)</h3>
+<p>Production-style ML workflow with automated retraining using GitHub Actions.</p>
+<button onclick="openModal('weather')">View More</button>
+</div>
+<!-- SPARK TEMPERATURE ANALYSIS -->
+<div class="project-card">
+<img alt="Spark Climate" src="assets/spark_cover.jpg"/>
+<h3>Global Temperature Analysis (Apache Spark)</h3>
+<p>Big Data analysis on 160+ years of climate data; research paper in progress.</p>
+<button onclick="openModal('spark')">View More</button>
+</div>
+<!-- CRIME DASHBOARD -->
+<div class="project-card">
+<img alt="Crime Dashboard" src="assets/crime_cover.jpg"/>
+<h3>Big Data Crime Analytics Dashboard</h3>
+<p>Interactive Power BI dashboard with slicers, KPIs, and multi-page insights.</p>
+<button onclick="openModal('crime')">View More</button>
+</div>
+<!-- SPEAKAPP -->
+<div class="project-card">
+<img alt="SpeakApp" src="assets/speakapp_cover.jpg"/>
+<h3>SpeakApp - AI Speech Assistant</h3>
+<p>Cross-platform pronunciation evaluator using ASR and ML scoring.</p>
+<button onclick="openModal('speakapp')">View More</button>
+</div>
 
-    <div class="project-container">
-
-        <!-- WEATHER ML PIPELINE -->
+        <!-- S&P 500 NEURAL NETWORK PRICE PREDICTOR -->
         <div class="project-card">
-            <img src="assets/weather_cover.jpg" alt="Weather Pipeline" />
-            <h3>Automated Weather ML Pipeline (MLOps)</h3>
-            <p>Production-style ML workflow with automated retraining using GitHub Actions.</p>
-            <button onclick="openModal('weather')">View More</button>
+            <img src="assets/invest_cover.jpg" alt="S&P 500 Neural Network Price Predictor" />
+            <h3>S&P 500 Neural Network Price Predictor</h3>
+            <p>Forecast S&P 500 closing prices 5 days ahead using a stacked LSTM network trained on Yahoo Finance historical data.</p>
+            <button onclick="openModal('invest')">View More</button>
         </div>
-
-        <!-- SPARK TEMPERATURE ANALYSIS -->
-        <div class="project-card">
-            <img src="assets/spark_cover.jpg" alt="Spark Climate" />
-            <h3>Global Temperature Analysis (Apache Spark)</h3>
-            <p>Big Data analysis on 160+ years of climate data; research paper in progress.</p>
-            <button onclick="openModal('spark')">View More</button>
-        </div>
-
-        <!-- CRIME DASHBOARD -->
-        <div class="project-card">
-            <img src="assets/crime_cover.jpg" alt="Crime Dashboard" />
-            <h3>Big Data Crime Analytics Dashboard</h3>
-            <p>Interactive Power BI dashboard with slicers, KPIs, and multi-page insights.</p>
-            <button onclick="openModal('crime')">View More</button>
-        </div>
-
-        <!-- SPEAKAPP -->
-        <div class="project-card">
-            <img src="assets/speakapp_cover.jpg" alt="SpeakApp" />
-            <h3>SpeakApp - AI Speech Assistant</h3>
-            <p>Cross-platform pronunciation evaluator using ASR and ML scoring.</p>
-            <button onclick="openModal('speakapp')">View More</button>
-        </div>
-    </div>
+        <!-- END PROJECT CARDS --></div>
 </section>
-
 <!-- SKILLS -->
-<section id="skills" class="section fade-in">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-box"><b>Programming:</b> Python, C, Java, HTML, CSS, JS</div>
-        <div class="skill-box"><b>AI/ML:</b> TensorFlow, Keras, Scikit-learn, NLP, DL</div>
-        <div class="skill-box"><b>Big Data:</b> Spark, Hadoop</div>
-        <div class="skill-box"><b>Tools:</b> Git, GitHub Actions, FastAPI, Power BI</div>
-        <div class="skill-box"><b>Platforms:</b> Windows, Linux, macOS</div>
-    </div>
+<section class="section fade-in" id="skills">
+<h2>Skills</h2>
+<div class="skills-grid">
+<div class="skill-box"><b>Programming:</b> Python, C, Java, HTML, CSS, JS</div>
+<div class="skill-box"><b>AI/ML:</b> TensorFlow, Keras, Scikit-learn, NLP, DL</div>
+<div class="skill-box"><b>Big Data:</b> Spark, Hadoop</div>
+<div class="skill-box"><b>Tools:</b> Git, GitHub Actions, FastAPI, Power BI</div>
+<div class="skill-box"><b>Platforms:</b> Windows, Linux, macOS</div>
+</div>
 </section>
-
 <!-- EDUCATION -->
-<section id="education" class="section fade-in">
-    <h2>Education</h2>
-    <p><b>BTech in Artificial Intelligence & Data Science</b> – REVA University (2023–Present)</p>
-    <p><b>Diploma in Electrical Engineering</b> – South Calcutta Polytechnic (2014–2017)</p>
+<section class="section fade-in" id="education">
+<h2>Education</h2>
+<p><b>BTech in Artificial Intelligence &amp; Data Science</b> – REVA University (2023–Present)</p>
+<p><b>Diploma in Electrical Engineering</b> – South Calcutta Polytechnic (2014–2017)</p>
 </section>
-
 <!-- CONTACT SECTION -->
-<section id="contact" class="section fade-in">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:utsavchatterrjee741@gmail.com">utsavchatterrjee741@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Drylegend" target="_blank">github.com/Drylegend</a></p>
+<section class="section fade-in" id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:utsavchatterrjee741@gmail.com">utsavchatterrjee741@gmail.com</a></p>
+<p>GitHub: <a href="https://github.com/Drylegend" target="_blank">github.com/Drylegend</a></p>
 </section>
-
 <!-- FOOTER -->
 <footer>
-    <p>© 2025 Utsav Chatterjee | Portfolio</p>
+<p>© 2025 Utsav Chatterjee | Portfolio</p>
 </footer>
-
 <!-- MODAL -->
-<div id="modal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <div id="modal-content" class="modal-content"></div>
+<div class="modal" id="modal">
+<span class="close" onclick="closeModal()">×</span>
+<div class="modal-content" id="modal-content"></div>
 </div>
 <!-- RESUME MODAL -->
-<div id="resumeModal" class="modal">
-    <span class="close" onclick="closeResume()">&times;</span>
-
-    <div class="resume-viewer">
-        <iframe src="assets/resume/Utsav Chatterjee.pdf"></iframe>
-
-        <a class="modal-link" 
-           href="assets/resume/Utsav Chatterjee.pdf" 
-           download>
+<div class="modal" id="resumeModal">
+<span class="close" onclick="closeResume()">×</span>
+<div class="resume-viewer">
+<iframe src="assets/resume/Utsav Chatterjee.pdf"></iframe>
+<a class="modal-link" download="" href="assets/resume/Utsav Chatterjee.pdf">
            Download Resume
         </a>
-    </div>
 </div>
-
+</div>
 <script src="script.js"></script>
 </body>
 </html>

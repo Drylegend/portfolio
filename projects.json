@@ -1,0 +1,120 @@
+{
+  "_meta": {
+    "generated_at": "2026-07-09T18:59:00",
+    "generated_by": "portfolio-agent",
+    "source": "agent/memory/projects.db",
+    "version": "1.0",
+    "note": "This file is auto-generated. Edit via: python agent/cli.py"
+  },
+  "projects": {
+    "weather": {
+      "title": "Automated Weather ML Pipeline (MLOps)",
+      "short_desc": "Production-style ML workflow with automated retraining using GitHub Actions.",
+      "full_desc": "Designed a production-style ML workflow with automated retraining using GitHub Actions. Includes data ingestion, preprocessing, model training, evaluation, and CI/CD automation across the full MLOps lifecycle.",
+      "github": "https://github.com/Drylegend/mlops-weather-pipeline",
+      "cover": "assets/weather_cover.jpg",
+      "images": [
+        "assets/weather_img1.jpg",
+        "assets/weather_img2.jpg",
+        "assets/weather_img3.jpg"
+      ],
+      "tech_tags": [
+        "Python",
+        "GitHub Actions",
+        "MLOps",
+        "Scikit-learn",
+        "CI/CD"
+      ],
+      "category": "ML",
+      "year": 2025
+    },
+    "spark": {
+      "title": "Global Temperature Analysis (Apache Spark)",
+      "short_desc": "Big Data analysis on 160+ years of climate data using PySpark.",
+      "full_desc": "Big Data analysis on 160+ years of climate data using PySpark. Includes trend detection, anomaly analysis, and statistical insights across global temperature records. Research paper currently in progress.",
+      "github": "https://github.com/Drylegend/Global_Temperature_Analysis_Apache_Spark",
+      "cover": "assets/spark_cover.jpg",
+      "images": [
+        "assets/spark_img1.jpg",
+        "assets/spark_img2.jpg",
+        "assets/spark_img3.jpg",
+        "assets/spark_img4.jpg",
+        "assets/spark_img5.jpg"
+      ],
+      "tech_tags": [
+        "Python",
+        "PySpark",
+        "Apache Spark",
+        "Big Data",
+        "Climate Analysis"
+      ],
+      "category": "Data",
+      "year": 2025
+    },
+    "crime": {
+      "title": "Big Data Crime Analytics Dashboard",
+      "short_desc": "Interactive Power BI dashboard with slicers, KPIs, and multi-page crime insights.",
+      "full_desc": "Power BI dashboard analyzing crime datasets using KPIs, slicers, and multi-page insights. Visualizes state-level pattern changes and yearly trends across large-scale crime data records.",
+      "github": "https://github.com/Drylegend/cybercrime-dashboard",
+      "cover": "assets/crime_cover.jpg",
+      "images": [
+        "assets/crime_img1.jpg",
+        "assets/crime_img2.jpg",
+        "assets/crime_img3.jpg",
+        "assets/crime_img4.jpg",
+        "assets/crime_img5.jpg"
+      ],
+      "tech_tags": [
+        "Power BI",
+        "DAX",
+        "Big Data",
+        "Data Visualisation",
+        "Analytics"
+      ],
+      "category": "Data",
+      "year": 2025
+    },
+    "speakapp": {
+      "title": "SpeakApp – AI Speech & Pronunciation Assistant",
+      "short_desc": "Cross-platform pronunciation evaluator using ASR and ML scoring.",
+      "full_desc": "Cross-platform pronunciation evaluator using automatic speech recognition (ASR), phoneme analysis, and ML-based accuracy scoring. Provides real-time feedback and a UI for structured speech practice sessions.",
+      "github": "https://github.com/Drylegend/SpeakApp",
+      "cover": "assets/speakapp_cover.jpg",
+      "images": [
+        "assets/speakapp_img1.jpg",
+        "assets/speakapp_img2.jpg"
+      ],
+      "tech_tags": [
+        "Python",
+        "ASR",
+        "NLP",
+        "Machine Learning",
+        "Speech Recognition"
+      ],
+      "category": "ML",
+      "year": 2025
+    },
+    "invest": {
+      "title": "S&P 500 Neural Network Price Predictor",
+      "short_desc": "Forecast S&P 500 closing prices 5 days ahead using a stacked LSTM network trained on Yahoo Finance historical data.",
+      "full_desc": "A stacked LSTM neural network was built in Python with TensorFlow to forecast S&P 500 closing prices using historical daily OHLCV data sourced from Yahoo Finance. The architecture stacks two LSTM layers with dropout regularisation over a 60-day sequence window, trained with the Adam optimiser and mean squared error loss. The model achieves a mean absolute percentage error (MAPE) of less than 2% across held-out testing periods, delivering reliable 5-day-ahead price forecasts.",
+      "github": "https://github.com/Drylegend/stock-market-invest-analyzer",
+      "cover": "assets/invest_cover.jpg",
+      "images": [
+        "assets/invest_cover.jpg",
+        "assets/invest_img1.jpg"
+      ],
+      "tech_tags": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "LSTM",
+        "Matplotlib",
+        "pandas",
+        "Yahoo Finance API"
+      ],
+      "category": "ML",
+      "year": 2024
+    }
+  }
+}
