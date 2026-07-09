@@ -98,7 +98,7 @@
       "title": "S&P 500 Neural Network Price Predictor",
       "short_desc": "Forecast S&P 500 closing prices 5 days ahead using a stacked LSTM network trained on Yahoo Finance historical data.",
       "full_desc": "A stacked LSTM neural network was built in Python with TensorFlow to forecast S&P 500 closing prices using historical daily OHLCV data sourced from Yahoo Finance. The architecture stacks two LSTM layers with dropout regularisation over a 60-day sequence window, trained with the Adam optimiser and mean squared error loss. The model achieves a mean absolute percentage error (MAPE) of less than 2% across held-out testing periods, delivering reliable 5-day-ahead price forecasts.",
-      "github": "https://github.com/Drylegend/stock-market-invest-analyzer",
+      "github": "https://github.com/Drylegend/Smart-Investment-Advisor.git",
       "cover": "assets/invest_cover.jpg",
       "images": [
         "assets/invest_cover.jpg",
