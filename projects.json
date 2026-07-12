@@ -125,7 +125,7 @@
       "images": [
         "assets/cih1.png",
         "assets/cih2.png",
-        "assets/cih3.png",  
+        "assets/cih3.png",
         "assets/cih4.png",
         "assets/cih5.png",
         "assets/cih6.png",
@@ -155,6 +155,35 @@
       ],
       "category": "ML",
       "year": 2026
+    },
+    "woodcraft_crm": {
+      "title": "AI-Powered Lead Management & Business Automation Platform",
+      "short_desc": "A premium, full-stack lead management platform and public booking website designed specifically for a custom woodworking and carpentry business.",
+      "full_desc": "Built with FastAPI and React, this platform automates the intake and evaluation of custom service inquiries. It integrates AI-powered lead classification and call transcript summarization alongside interactive Leaflet-based geofencing for service area validation. The administrative portal provides comprehensive queues, metrics, and automated daily summaries to streamline operations.",
+      "github": "https://github.com/Drylegend/woodcraft-crm",
+      "cover": "assets/woodcraft_crm_cover.png",
+      "images": [
+        "assets/woodcraft_crm_cover.png",
+        "assets/woodcraft_crm_img1.png",
+        "assets/woodcraft_crm_img2.png",
+        "assets/woodcraft_crm_img3.png",
+        "assets/woodcraft_crm_img4.png"
+      ],
+      "tech_tags": [
+        "FastAPI",
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "TanStack Query",
+        "Leaflet",
+        "SQLite",
+        "SQLAlchemy",
+        "Gemini API",
+        "Twilio",
+        "WhatsApp Cloud API"
+      ],
+      "category": "Web",
+      "year": 2025
     }
   }
 }
